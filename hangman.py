@@ -52,7 +52,6 @@ def init():
   for w in word:
     letters.append(w)
     dashes.append("_")
-  print(letters)
   while game == True:
     print(" ".join(dashes));
     print("guesses remaining:", guesses)
@@ -64,6 +63,7 @@ def init():
         dashes.index("_")
       except:
         game = False
+        print(word)
         print("Congratulations! You got the word!")
         print("Thanks for playing :]")
     else:
